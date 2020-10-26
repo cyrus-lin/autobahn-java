@@ -13,7 +13,7 @@ def groupID = 'com.minapp.android.autobahn'
 def gitUrl = 'https://github.com/crossbario/autobahn-java.git'
 def licenseName = 'MIT'
 def licenseUrl = 'https://opensource.org/licenses/MIT'
-def relVersion = '20.7.3'
+def relVersion = '20.7.4'
 def siteUrl = 'https://github.com/crossbario/autobahn-java'
 
 dependencies {
