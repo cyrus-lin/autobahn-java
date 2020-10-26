@@ -16,7 +16,7 @@ project.ext {
     IS_NETTY = _PLATFORM == 'netty'
     IS_NEXT = _PLATFORM == 'next'
     BUILD_LEGACY = project.properties.get('buildLegacy', false)
-    PUBLISH = _PUBLISH
+    PUBLISH = true
 }
 
 buildscript {

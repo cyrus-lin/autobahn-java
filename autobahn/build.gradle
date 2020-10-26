@@ -9,12 +9,11 @@ apply plugin: IS_ANDROID ? 'com.android.library': 'java-library'
 def ARTIFACT_JAVA = 'autobahn-java'
 def ARTIFACT_NEXT = 'autobahn'
 
-def groupID = 'io.crossbar.autobahn'
+def groupID = 'com.minapp.android.autobahn'
 def gitUrl = 'https://github.com/crossbario/autobahn-java.git'
 def licenseName = 'MIT'
 def licenseUrl = 'https://opensource.org/licenses/MIT'
-def relVersion = System.getenv().containsKey('AUTOBAHN_BUILD_VERSION') ? System.getenv(
-        'AUTOBAHN_BUILD_VERSION'): '18.3.1'
+def relVersion = '20.7.1'
 def siteUrl = 'https://github.com/crossbario/autobahn-java'
 
 dependencies {
@@ -54,7 +53,7 @@ if (PUBLISH) {
         }
         publish = true
         pkg {
-            repo = 'autobahn'
+            repo = 'minapp-android-sdk'
             if (IS_ANDROID) {
                 name = ARTIFACT_ANDROID
             } else if (IS_NEXT){
@@ -62,7 +61,6 @@ if (PUBLISH) {
             } else {
                 name = ARTIFACT_JAVA
             }
-            userOrg = 'crossbario'
             licenses = [licenseName]
             vcsUrl = gitUrl
             version {
